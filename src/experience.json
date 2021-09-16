@@ -1,0 +1,28 @@
+    [{
+        "id": 4,
+        "job": "Community Specialist",
+        "company": "Promobit",
+        "period": "10/2020 to today",
+        "activities": "Leadership in initiatives to improve brand image, grow positive engagement and better develop a community; Community management; Data analysis; Planning and implementation of strategies and projects for community evolution; QA; Customer support; Establishment of communication and feedback channels to improve teamwork and transparency.",
+        "link": "https://drive.google.com/drive/folders/16XzCYkDiX1cFRwOt4hq4tQJ0Zj9KP8ju"
+    },{
+        "id": 3,
+        "job": "Community Manager",
+        "company": "Promobit",
+        "period": "05/2017 to 10/2020",
+        "activities": "Community management; Data analysis, metrics monitoring, project planning and implementation; Customer service & support; Troubleshooting; Procedure and methodology creation; Testing and validation; QA; Brand positioning strategies; Social media projects; studies and benchmarks; Integration dynamics between teams."
+    },{
+        "id": 2,
+        "job": "Editor",
+        "company": "Promobit",
+        "period": "05/2017 to 10/2020",
+        "activities": "Article elaboration with focus on SEO; Article planning with focus on community relationship; National events covering.",
+        "link": "https://drive.google.com/drive/folders/1v-w4ulaI-M9fk3T7sYfarwmVcDonkiXK"
+    },{
+        "id": 1,
+        "job": "Freelance Editor",
+        "company": "Critical Hits",
+        "period": "02/2015 to 03/2019",
+        "activities": "Article elaboration with focus on SEO; Article and news localization from English or Spanish to Portuguese.",
+        "link": "https://criticalhits.com.br/author/rafael-oliveira/"
+    }]
