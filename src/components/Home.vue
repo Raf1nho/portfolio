@@ -1,11 +1,11 @@
 <template>
 <div class="home">
     <div class="photo">
-      <img src="../assets/profile.png" alt="">
+      <img src="../assets/profile.webp" alt="Imagem de perfil">
     </div>
     <div class="introduction">
         <h1 class="title" >Hi, I'm Rafael</h1>
-        <h3 class="description">Frontend Developer</h3>
+        <h2 class="description">Frontend Developer</h2>
         <div>
           <p class="about">A person that likes to learn, code and create things that actually work! Also passionate about fixing stuff.</p>
         </div>
@@ -37,6 +37,7 @@ export default {
 
   img {
     width: 250px;
+    height: 250px;
   }
 
   .introduction {
@@ -74,6 +75,7 @@ export default {
 
   img {
     width: 200px;
+    height: 200px;
   }
 }
 

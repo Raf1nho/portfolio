@@ -91,6 +91,7 @@ export default {
 html {
   background-color: #252525;
   font-family: 'Poppins', sans-serif;
+  font-display: swap;
   color: #dfdfdf;
   font-size: 18px;
   height:100vh;

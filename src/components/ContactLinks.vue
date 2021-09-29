@@ -33,6 +33,7 @@ export default {
   }
   .social-icon {
     width: 30px;
+    height: 30px;
     margin-bottom: 0.8rem
   }
 
