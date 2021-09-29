@@ -25,16 +25,11 @@
 
 <script>
 import {ref} from 'vue'
-import { useRouter } from "vue-router"
 
 export default {
   name: 'Portfolio',
   setup() {
     const navShow = ref(false)
-    const router = useRouter()
-
-     
-
 
     let finalPagina = window.innerHeight;
   window.addEventListener("scroll",function(){
@@ -45,8 +40,6 @@ export default {
     }
   })
 
-
-
     const showMenu = () => {
       if (!navShow.value) {
         navShow.value = true
@@ -55,29 +48,18 @@ export default {
       }
     } 
     
-    const swipeHandler = (direction) => {
-      if (direction == 'left') {
-        router.replace("/skills")
-        console.log("swipe left")
-      } else if (direction == 'right') {
-        router.replace("/experience")
-        console.log("swipe right")
-      } 
-      // else if (document.documentElement.scrollTop == 0 && direction == 'bottom') {
-      //       // window.addEventListener("scroll",() => {
+    // const swipeHandler = (direction) => {
+    //   if (direction == 'left') {
+    //     router.replace("/skills")
+    //     console.log("swipe left")
+    //   } else if (direction == 'right') {
+    //     router.replace("/experience")
+    //     console.log("swipe right")
+    //   } 
+      
+    // }
 
-      //       // })
-      //       router.replace("/")
-      //       console.log("swipe bottom")
-
-      //   } 
-      //   else if (direction == 'top') {
-      //   router.replace("/education")
-      //   console.log("swipe top")
-      // } 
-    }
-
-    return { showMenu, navShow, swipeHandler }
+    return { showMenu, navShow }
   }
  
 }
