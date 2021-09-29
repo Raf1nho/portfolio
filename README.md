@@ -1,24 +1,3 @@
-# portfolio-app
+# Interactive CV
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Simple application for my personal cv/portfolio that includes all my experience, skills, courses, graduation and contact information.
