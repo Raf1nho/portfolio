@@ -70,6 +70,7 @@ export default {
   }
   .social-icon {
     width: 35px;
+    height: 35px;
     margin-bottom: 0.5rem;
     cursor: pointer;
   }

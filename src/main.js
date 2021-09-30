@@ -20,24 +20,20 @@ import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 
 
-import Contact from './components/Contact'
-import Skills from './components/Skills'
-import Experience from './components/Experience'
-import Education from './components/Education'
-import Home from './components/Home'
-import ContactLinks from './components/ContactLinks'
-
-
+// Lazy loading all the components importing them just when the route changes
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/portfolio' , component: Home },
-        { path: '/contact', component: Contact},
-        { path: '/skills', component: Skills},
-        { path: '/experience', component: Experience},
-        { path: '/education', component: Education},
+        { path: '/' , component: () => import("./components/Home") },
+        { path: '/portfolio' , component: () => import("./components/Home") },
+        { path: '/contact', component: () => import("./components/Contact")},
+        { path: '/skills', component: () => import("./components/Skills")},
+        { path: '/experience', component: () => import("./components/Experience")},
+        { path: '/education', component: () => import("./components/Education")},
     ]
 })
+
+import ContactLinks from './components/ContactLinks'
 
 const app = createApp(App);
 

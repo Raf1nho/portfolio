@@ -7,7 +7,7 @@
         <h1 class="title" >Hi, I'm Rafael</h1>
         <h2 class="description">Frontend Developer</h2>
         <div>
-          <p class="about">A person that likes to learn, code and create things that actually work! Also passionate about fixing stuff.</p>
+          <p class="about">A person that likes to learn, code and create things that actually work! Also passionate about fixing stuff. Based on São Paulo, Brazil</p>
         </div>
     </div>
     
