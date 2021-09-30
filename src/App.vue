@@ -1,5 +1,5 @@
 <template>
-  <html v-touch:swipe.(direction)="swipeHandler">
+  <!-- <html v-touch:swipe.(direction)="swipeHandler"> -->
     <div>
         <i @click='showMenu' class="pi pi-bars showMenu"></i>
         <nav v-if='navShow' class="nav-mobile">
@@ -20,7 +20,7 @@
         </nav>
     </div>
     <router-view></router-view>
-  </html>
+  <!-- </html> -->
 </template>
 
 <script>
@@ -30,15 +30,6 @@ export default {
   name: 'Portfolio',
   setup() {
     const navShow = ref(false)
-
-    let finalPagina = window.innerHeight;
-  window.addEventListener("scroll",function(){
-    if(document.documentElement.scrollTop == 0){
-      console.log("Window scroll is at the top")
-    } else if(document.documentElement.scrollTop == finalPagina){
-            console.log("Window scroll is at the bottom")
-    }
-  })
 
     const showMenu = () => {
       if (!navShow.value) {
@@ -133,6 +124,7 @@ html {
   .showMenu {
     cursor: pointer;
     margin-bottom: 1rem;
+    
   }
   .nav-mobile {  
     display: flex;
@@ -141,6 +133,13 @@ html {
   }
   .nav-mobile .nav-link {
     margin-left: 0px;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
   .nav-desk{
     display: none

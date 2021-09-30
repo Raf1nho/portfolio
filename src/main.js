@@ -1,7 +1,7 @@
 import { createApp } from "vue"
 import App from './App.vue'
 import {createRouter, createWebHistory} from 'vue-router'
-import Vue3TouchEvents from "vue3-touch-events";
+// import Vue3TouchEvents from "vue3-touch-events";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +10,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(fab, fas)
-
 
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button'
@@ -44,6 +43,6 @@ app.component("Button", Button);
 
 app.component("ContactSocial", ContactLinks);
 app.use(router);
-app.use(Vue3TouchEvents, {disableClick: true});
+// app.use(Vue3TouchEvents, {disableClick: true});
 app.mount('#app');
 
