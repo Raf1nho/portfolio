@@ -35,6 +35,10 @@
             <font-awesome-icon class="icon" :icon="['fab', 'git-alt']" />
             <p>Git</p>
         </div>
+        <div class="div-skill">
+            <font-awesome-icon class="icon" :icon="['fab', 'github']" />
+            <p>Github</p>
+        </div>
     </div>
     </div>
         <p class="introduction other">Other skills:</p>
