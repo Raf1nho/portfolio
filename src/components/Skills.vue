@@ -54,11 +54,11 @@
             </div>
             <div class="div-skill">
                 <img class="icon" src="../assets/photoshop.svg" alt="">
-                <p>Adobe Photoshop</p>
+                <p>Photoshop</p>
             </div>
             <div class="div-skill">
                 <img class="icon" src="../assets/audition.svg" alt="">
-                <p>Adobe Audition</p>
+                <p>Audition</p>
             </div>
         </div>
         </div>
