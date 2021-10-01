@@ -50,7 +50,7 @@ export default {
 /* Social */
 
   .div-contact-social {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +68,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 60px;
   }
   .social-icon {
     width: 35px;

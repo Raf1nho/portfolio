@@ -13,7 +13,7 @@
     <TabMenu class='mobile-menu' :model="items"/>
     <div>
         <nav class="nav-desk">
-          <router-link class='nav-link home' to='/portfolio'>Home</router-link>
+          <router-link class='nav-link home' to='/portfolio'>About</router-link>
           <router-link class='nav-link' to='/skills'>Skills</router-link>
           <router-link class='nav-link' to='/experience'>Experience</router-link>
           <router-link class='nav-link' to='/education'>Education</router-link>
@@ -77,7 +77,6 @@ html {
   font-display: swap;
   color: #dfdfdf;
   font-size: 18px;
-  height:100vh;
 }
 
 .nav-link {
@@ -129,15 +128,8 @@ html {
 
 }
 
- 
-
-
 /* Telas pequenas */
 @media (max-width: 1249px) {
-  html {
-    margin-bottom: 50px;
-  }
-
   body {
     margin: 7vw 7vw;
   }
