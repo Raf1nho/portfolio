@@ -7,5 +7,5 @@ module.exports = {
 		/^utm_/,
 		/^fbclid$/
 	],
-	swDest: 'docs/sw.js'
+	swDest: 'public/sw.js'
 };
