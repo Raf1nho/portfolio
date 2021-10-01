@@ -22,7 +22,7 @@ export default {
 <style scoped>
 
 /* Telas grandes */
-@media (min-width: 700px) {
+@media (min-width: 1250px) {
 
   .social {
     position: fixed;
@@ -43,8 +43,9 @@ export default {
   }
 }
 
+
 /* Telas pequenas */
-@media (max-width: 700px) {
+@media (max-width: 1249px) {
 
 /* Social */
 

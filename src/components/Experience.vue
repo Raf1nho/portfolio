@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import experience from "../experience.json";
 
 export default {
@@ -32,6 +32,10 @@ export default {
     },
     setup() {
         const active = ref(0)
+
+        onMounted(() => {
+              window.scrollTo(0, 0)
+        }) 
         
         function activate(id) {
             if (active.value != id) {
@@ -54,7 +58,7 @@ a {
 }
 
 /* Telas grandes */
-@media (min-width: 700px) {
+@media (min-width: 1250px) {
 
     h1 {
         margin: 5rem 0 1rem 6rem;
@@ -96,7 +100,7 @@ a {
 }
 
 /* Telas pequenas */
-@media (max-width: 700px) {
+@media (max-width: 1249px) {
  h1 {
         margin-bottom: 1rem;
     }

@@ -68,12 +68,16 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 
 export default {
-
     setup() {
-        
-    }
+    onMounted(() => {
+        window.scrollTo(0, 0)
+    }) 
+
+    return {}
+  }
     
 }
 </script>
@@ -85,7 +89,7 @@ export default {
     }
 
 /* Telas grandes */
-@media (min-width: 700px) {
+@media (min-width: 1250px) {
 
     h1 {
         margin: 5rem 0 1rem 6rem;
@@ -131,7 +135,7 @@ export default {
 }
 
 /* Telas pequenas */
-@media (max-width: 700px) {
+@media (max-width: 1249px) {
 
     .container {
         display: flex;

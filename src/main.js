@@ -13,6 +13,7 @@ library.add(fab, fas)
 
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button'
+import TabMenu from 'primevue/tabmenu'
 
 import 'primevue/resources/themes/saga-blue/theme.css'
 import 'primevue/resources/primevue.min.css'
@@ -40,6 +41,7 @@ app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.use(PrimeVue);
 app.component("Button", Button);
+app.component("TabMenu", TabMenu);
 
 app.component("ContactSocial", ContactLinks);
 app.use(router);

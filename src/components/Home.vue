@@ -7,7 +7,8 @@
         <h1 class="title" >Hi, I'm Rafael</h1>
         <h2 class="description">Frontend Developer</h2>
         <div>
-          <p class="about">A person that likes to learn, code and create things that actually work! Also passionate about fixing stuff. Based on São Paulo, Brazil</p>
+          <p class="about">A person that likes to learn, code and create things that actually work! Also passionate about fixing stuff.</p>
+          <p class="about">Currently studying Vue and improving Javascript and Python skills. Living in São Paulo, Brazil</p>
         </div>
     </div>
     
@@ -16,16 +17,26 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 
 export default {
+  setup() {
+    onMounted(() => {
+      window.scrollTo(0, 0)
+    }) 
+
+    return {}
+  }
+  
 }
 </script>
 
 
 <style scoped>
 
+
 /* Telas grandes */
-@media (min-width: 700px) {
+@media (min-width: 1250px) {
 
   .home {
     margin: 5rem 6rem 0 6rem;
@@ -41,7 +52,6 @@ export default {
   }
 
   .introduction {
-    margin-right: 6rem;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -62,7 +72,7 @@ export default {
 }
 
 /* Telas pequenas */
-@media (max-width: 700px) {
+@media (max-width: 1249px) {
 
   .home {
     display:  flex;
@@ -76,6 +86,15 @@ export default {
   img {
     width: 200px;
     height: 200px;
+  }
+  /* About */
+  .description {
+    font-size:1rem;
+    margin-top: 0.2rem;
+  }
+  .about {
+    margin-top: 1rem;
+    font-size:0.8rem;
   }
 }
 

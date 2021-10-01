@@ -1,6 +1,6 @@
 <template>
-  <!-- <html v-touch:swipe.(direction)="swipeHandler"> -->
-    <div>
+  <html >
+    <!-- <div class='mobile-menu'>
         <i @click='showMenu' class="pi pi-bars showMenu"></i>
         <nav v-if='navShow' class="nav-mobile">
           <router-link class='nav-link' to='/portfolio'>Home</router-link>
@@ -9,7 +9,8 @@
           <router-link class='nav-link' to='/education'>Education</router-link>
           <router-link class='nav-link' to='/contact'>Contact</router-link>
         </nav>
-    </div>
+    </div> -->
+    <TabMenu class='mobile-menu' :model="items"/>
     <div>
         <nav class="nav-desk">
           <router-link class='nav-link home' to='/portfolio'>Home</router-link>
@@ -20,7 +21,7 @@
         </nav>
     </div>
     <router-view></router-view>
-  <!-- </html> -->
+  </html>
 </template>
 
 <script>
@@ -38,6 +39,14 @@ export default {
         navShow.value = false
       }
     } 
+
+    let items = [
+                {label: 'About', icon: 'pi pi-home', to: '/portfolio'},
+                {label: 'Skills', icon: 'pi pi-thumbs-up', to: '/skills'},
+                {label: 'Experience', icon: 'pi pi-star-o', to: '/experience'},
+                {label: 'Education', icon: 'pi pi-pencil', to: '/education'},
+                {label: 'Contact', icon: 'pi pi-send', to: '/contact'}
+            ]
     
     // const swipeHandler = (direction) => {
     //   if (direction == 'left') {
@@ -50,15 +59,16 @@ export default {
       
     // }
 
-    return { showMenu, navShow }
+    return { showMenu, navShow, items }
   }
  
 }
 </script>
 
 <style>
+
 * {
-  margin: 0
+  margin: 0;
 }
 
 html {
@@ -79,8 +89,9 @@ html {
   text-decoration: none;
 }
 
+
 /* Telas grandes */
-@media (min-width: 700px) {
+@media (min-width: 1250px) {
   body {
   margin: 15vh 20vw ;
   -ms-overflow-style: none;  /* IE e Edge */
@@ -98,13 +109,13 @@ html {
     flex-wrap: wrap;
     align-items:center;
     justify-content: center;
-    width: 95%;
+    width: 100%;
   }
   .nav-link:not(.home){
-    margin-left: 6rem;
+    margin-left: 5rem;
   }
 
-  .nav-mobile {
+  .mobile-menu {
     display: none;
   }
 
@@ -112,46 +123,69 @@ html {
     display: none !important;
   }
 
+  .about {
+    margin-top: 1rem;
+  }
+
 }
+
+ 
+
 
 /* Telas pequenas */
-@media (max-width: 700px) {
-   body {
-  margin: 7vw 7vw;
-}
+@media (max-width: 1249px) {
+  html {
+    margin-bottom: 50px;
+  }
 
-/* NAV */
-  .showMenu {
-    cursor: pointer;
-    margin-bottom: 1rem;
+  body {
+    margin: 7vw 7vw;
+  }
+  .p-tabmenu {
+    width: 100%;
+    background-color: #dfdfdf;
+  }
+  .p-tabmenu-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .p-menuitem-link {
+    flex-direction: column;
+    padding: 6px !important; 
     
   }
-  .nav-mobile {  
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  .nav-mobile .nav-link {
-    margin-left: 0px;
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+  .p-highlight {
+    -webkit-touch-callout:none !important;
+    -webkit-user-select:none !important;
+    -khtml-user-select:none !important;
+    -moz-user-select:none !important;
+    -ms-user-select:none !important;
+    user-select:none !important;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
+  .p-button {
+    position: inherit !important;
+  }
+
+  .p-menuitem-text {
+    margin-top: 4px;
+    font-size: 0.8rem;
+  }
+  .p-menuitem-icon {
+    margin-right: 0 !important;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    
+  }
+
   .nav-desk{
     display: none
   }
-  /* About */
-  .description {
-    font-size:1rem;
-    margin-top: 0.2rem;
-  }
-  .about {
-    margin-top: 1rem;
-    font-size:0.8rem;
-  }
+  
 }
 </style>

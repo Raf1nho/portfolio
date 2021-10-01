@@ -2,6 +2,11 @@ const zlib = require("zlib");
 const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new CompressionPlugin({
       filename: "[path][base].br",
@@ -18,3 +23,4 @@ module.exports = {
     }),
   ],
 };
+
