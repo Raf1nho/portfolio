@@ -118,9 +118,13 @@ export default {
     }
 
     .div-skill{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width: 80px;
         text-align: center;
-        margin-top: 2rem;
-        margin-right: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .div-skill:not(.html5) {
@@ -149,13 +153,14 @@ export default {
         flex-wrap: wrap;
     }
     .div-skill{
-        text-align: center;
+        width: 80px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
         margin-top: 2rem;
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
         flex: 1 0 1;
-        align-self: auto;
-
     }
 
     .icon {
